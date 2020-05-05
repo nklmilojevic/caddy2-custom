@@ -6,3 +6,5 @@ RUN caddy-builder \
 FROM caddy:2.0.0
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+CMD ["caddy", "run", "--environ", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
