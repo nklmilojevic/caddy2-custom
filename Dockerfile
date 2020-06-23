@@ -2,7 +2,7 @@ FROM caddy:2.0.0-builder AS builder
 
 RUN caddy-builder \
   github.com/caddy-dns/cloudflare \
-  github.com/gamalan/caddy-tlsredis
+  github.com/gamalan/caddy-tlsredis@caddy-v2
 
 FROM caddy:2.0.0
 
