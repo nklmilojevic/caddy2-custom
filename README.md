@@ -1,2 +1,2 @@
-# caddy2-cloudflare
-Caddy 2 with Cloudflare docker repo
+# caddy2-custom
+Caddy 2 with Cloudflare and Redis plugins
