@@ -2,8 +2,8 @@ FROM caddy:2-builder AS builder
 
 RUN caddy-builder \
   github.com/caddy-dns/cloudflare \
-  github.com/gamalan/caddy-tlsredis@caddy-v2
-
+  github.com/gamalan/caddy-tlsredis \
+  github.com/hairyhenderson/caddyprom
 FROM caddy:2-alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
