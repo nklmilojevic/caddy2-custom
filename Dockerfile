@@ -3,7 +3,7 @@ FROM caddy:2-builder AS builder
 RUN caddy-builder \
   github.com/caddy-dns/cloudflare \
   github.com/gamalan/caddy-tlsredis \
-  github.com/hairyhenderson/caddyprom
+  github.com/captncraig/caddy-realip
 FROM caddy:2-alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
