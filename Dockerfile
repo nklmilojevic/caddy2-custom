@@ -3,7 +3,9 @@ FROM caddy:2-builder AS builder
 RUN caddy-builder \
   github.com/caddy-dns/cloudflare \
   github.com/gamalan/caddy-tlsredis \
-  github.com/kirsch33/realip
+  github.com/kirsch33/realip \
+  github.com/greenpau/caddy-auth-portal
+
 FROM caddy:2-alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
