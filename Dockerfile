@@ -1,10 +1,10 @@
-FROM caddy:2-builder AS builder
+FROM caddy:2-builder-alpine AS builder
 
-RUN caddy-builder \
-  github.com/caddy-dns/cloudflare \
-  github.com/gamalan/caddy-tlsredis \
-  github.com/kirsch33/realip \
-  github.com/greenpau/caddy-auth-portal
+RUN xcaddy build \
+  --with github.com/caddy-dns/cloudflare \
+  --with github.com/gamalan/caddy-tlsredis \
+  --with github.com/kirsch33/realip \
+  --with github.com/greenpau/caddy-auth-portal
 
 FROM caddy:2-alpine
 
