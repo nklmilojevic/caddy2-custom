@@ -4,8 +4,7 @@ RUN caddy-builder \
   github.com/caddy-dns/cloudflare \
   github.com/gamalan/caddy-tlsredis \
   github.com/kirsch33/realip \
-  github.com/greenpau/caddy-auth-portal \
-  github.com/greenpau/caddy-auth-jwt
+  github.com/greenpau/caddy-auth-portal
 
 FROM caddy:2-alpine
 
