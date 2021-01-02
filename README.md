@@ -1,6 +1,6 @@
 # caddy2-custom
 
-Caddy2 docker image with following plugins:
+Caddy2 docker image with the following plugins:
 
 - [Cloudflare DNS](https://github.com/caddy-dns/cloudflare) - for getting certificates via dns-01
 - [Redis](https://github.com/gamalan/caddy-tlsredis) - store your certificates in Redis instead of files
