@@ -4,8 +4,8 @@ RUN xcaddy build \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/gamalan/caddy-tlsredis \
   --with github.com/kirsch33/realip \
-  --with github.com/greenpau/caddy-auth-jwt \
-  --with github.com/greenpau/caddy-auth-portal
+  --with github.com/greenpau/caddy-auth-jwt@latest \
+  --with github.com/greenpau/caddy-auth-portal@latest
 
 FROM caddy:2.4.3-alpine
 
